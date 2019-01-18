@@ -5,6 +5,7 @@ import NavBar from './components/NavBar';
 import Jumbo from './components/Jumbo';
 import {Container, Row, Col} from 'reactstrap';
 import Images from './components/Images';
+import Scoreboard from './components/Scoreboard';
 
 
 class App extends Component {
@@ -41,6 +42,7 @@ class App extends Component {
         <NavBar />
         <Jumbo fluid onClick={this.Guess}/>
         <br></br>
+        <Scoreboard score={this.state.score} total={this.state.total} />
         <div onClick={this.Guess}>
           <span>{this.state.score}</span>
         </div>
