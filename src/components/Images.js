@@ -7,7 +7,7 @@ function Images (props) {
     
     return(
         <Container>
-            {imgArr.map((item,index) => (
+            {props.Arr.map((item,index) => (
                     <img src={url+item+'.png'} id={index} alt={item+'-'+index} style= {{padding: ".5rem"}} onClick={props.Guess}></img>
             ))}
 

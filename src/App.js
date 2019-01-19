@@ -7,6 +7,7 @@ import {Container, Row, Col} from 'reactstrap';
 import Images from './components/Images';
 import Scoreboard from './components/Scoreboard';
 
+const imgArr = ['Aatrox', 'Ahri', 'Akali', 'Alistar', 'Ezreal', 'Sivir', 'Soraka', 'JarvanIV', 'Nasus', 'Jax', 'Leblanc', 'Kalista'];
 
 class App extends Component {
   state = {
@@ -33,8 +34,20 @@ class App extends Component {
     } else {
       window.location ="/";
     }
-
   };
+  fishy (a) {
+    var m = a.length, t, i;
+    // While there remain elements to shuffle…
+    while (m) {
+      // Pick a remaining element…
+      i = Math.floor(Math.random() * m--);
+      // And swap it with the current element.
+      t = a[m];
+      a[m] = a[i];
+      a[i] = t;
+    }
+  return a;
+  }
 
   render() {
     return (
@@ -44,7 +57,7 @@ class App extends Component {
         <br></br>
         <Scoreboard score={this.state.score} total={this.state.total} />
         <br></br>
-        <Images Guess={this.Guess}></Images>
+        <Images Arr={this.fishy(imgArr)} Guess={this.Guess}></Images>
       </Container>
     );
   }
