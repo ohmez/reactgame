@@ -43,55 +43,8 @@ class App extends Component {
         <Jumbo fluid onClick={this.Guess}/>
         <br></br>
         <Scoreboard score={this.state.score} total={this.state.total} />
-        <div onClick={this.Guess}>
-          <span>{this.state.score}</span>
-        </div>
-        
+        <br></br>
         <Images Guess={this.Guess}></Images>
-        {/* <Row>
-          <Col>
-            <img src={"http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/Aatrox.png"} alt={"One"} id="1"></img>
-          </Col>
-          <Col>
-            <img src={"http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/Ahri.png"} alt={"Two"} id="2"></img>
-          </Col>
-          <Col>
-            <img src={"http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/Alistar.png"} alt={"Three"} id="3"></img>
-          </Col>
-          <Col>
-            <img src={"http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/Nasus.png"} alt={"Four"} id="4"></img>
-          </Col>
-        </Row>
-        <br></br>
-        <Row>
-          <Col>
-            <img src={"http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/Sivir.png"} alt={"Five"} id="5"></img>
-          </Col>
-          <Col>
-            <img src={"http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/Ezreal.png"} alt={"Six"} id="6"></img>
-          </Col>
-          <Col>
-            <img src={"http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/Jax.png"} alt={"Seven"} id="7"></img>
-          </Col>
-          <Col>
-            <img src={"http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/Leblanc.png"} alt={"Eight"} id="8"></img>
-          </Col>
-        </Row>
-        <br></br>
-        <Row>
-          <Col>
-            <img src={"http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/JarvanIV.png"} alt={"Nine"} id="9"></img>
-          </Col>
-          <Col>
-            <img src={"http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/Soraka.png"} alt={"Ten"} id="10"></img>
-          </Col>
-          <Col>
-            <img src={"http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/Kalista.png"} alt={"Eleven"} id="11"></img>
-          </Col>
-          <Col>
-            <img src={"http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/Akali.png"} alt={"Twelve"} id="12"></img>
-          </Col>
-        </Row> */}
       </Container>
     );
   }
