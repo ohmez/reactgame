@@ -23,19 +23,22 @@ class App extends Component {
     }
     this.setState(OGstate);
   };
+  clikd = [];
   Guess = event => {
     const newState = { ...this.state }
-    console.log(newState);
     const clikID = event.target.id;
-    const classes = event.target.attributes.class;
-    if(!classes) {
-      newState.score = (this.state.score +1); event.target.attributes.class = 'clicked';
+    if(!this.clikd.includes(clikID)) {
+      newState.score = (this.state.score +1);
       this.setState(newState);
+      this.clikd.push(clikID);
+      console.log(this.clikd);
     } else {
-      window.location ="/";
+      newState.score = 0;
+      this.setState(newState);
+      this.clikd = [];
     }
   };
-  fishy (a) {
+  FishYa (a) {
     var m = a.length, t, i;
     // While there remain elements to shuffle…
     while (m) {
@@ -57,7 +60,7 @@ class App extends Component {
         <br></br>
         <Scoreboard score={this.state.score} total={this.state.total} />
         <br></br>
-        <Images Arr={this.fishy(imgArr)} Guess={this.Guess}></Images>
+        <Images Arr={this.FishYa(imgArr)} Guess={this.Guess}></Images>
       </Container>
     );
   }
