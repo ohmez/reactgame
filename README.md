@@ -1,68 +1,40 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Lol Memory Game
+![image](./images/example.PNG)
+[Play Me Now](https://lol-memory-challenge.herokuapp.com/)
+In this react app I've built a memory game rendering 12 images for you to try to remember which ones you've clicked.
+The challenge is that everytime you click an image the images are shuffled and rendered back to DOM.
+Since this is a react app this is a seemless transition of dynamic content with no page refresh through gameplay.
 
-## Available Scripts
+## Index
+[Developer Section](#Developer-Section)
 
-In the project directory, you can run:
+## Developer-Section
 
-### `npm start`
+### Technologies Used
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+In this app we're utilizing the abundant technology of `react.js` by utilizing the npm `create-react-app`.
+This builds a bootstrapped framework for the app allowing creation of components to develop the app.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+#### ReactStrap
 
-### `npm test`
+npm `reactstrap` allows for quick integration of bootstrap technologies while developing your react components.
+I utilized this to create the UI for the app.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Fisher Yates Shuffle
 
-### `npm run build`
+Part of the challenge was shuffling the images and rendering them to the page.
+I did a quick google search on javascrip array shuffle and found this great function.
+This allows for fast shuffling of arrays utilizing a minimum ammount of memory in order to execute the task. 
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Educational
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+If you're wanting to use this repo for educational purposes you'll need the following:
+`node` -> `mkdir sandbox` -> `cd sandbox` -> `npm install yarn create-react-app reactstrap` -> `node create-react-app yourappname`;
+Once you've done this you can copy over the components or write your own to create your own app.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+If you want to utilize all the code here then clone the repo into node `git clone` and paste the link.
+you'll still need to `npm install` then you can `yarn start` or `npm start` depending on your preferences and global settings. 
 
-### `npm run eject`
+## I'm Deployed
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Come play the game [here](https://lol-memory-challenge.herokuapp.com/)
