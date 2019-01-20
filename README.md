@@ -1,5 +1,6 @@
 # Lol Memory Game
 ![image](./images/example.PNG)
+
 [Play Me Now](https://lol-memory-challenge.herokuapp.com/)
 In this react app I've built a memory game rendering 12 images for you to try to remember which ones you've clicked.
 The challenge is that everytime you click an image the images are shuffled and rendered back to DOM.
