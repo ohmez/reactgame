@@ -9,9 +9,6 @@ const Jumbo = (props) => {
         <p className="lead">In this game you'll start by clicking a photo, then try to click the rest without clicking a previously clicked image.</p>
         <hr className="my-2" />
         <p>Don't click the same picture twice!</p>
-        <p className="lead">
-          <Button color="primary">Begin - might remove this</Button>
-        </p>
       </Jumbotron>
     </div>
   );
